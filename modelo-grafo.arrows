@@ -1,0 +1,160 @@
+{
+  "nodes": [
+    {
+      "id": "User",
+      "labels": ["User"],
+      "properties": {},
+      "position": {
+        "x": 150,
+        "y": 150
+      },
+      "caption": "User"
+    },
+    {
+      "id": "Movie",
+      "labels": ["Movie"],
+      "properties": {},
+      "position": {
+        "x": 300,
+        "y": 150
+      },
+      "caption": "Movie"
+    },
+    {
+      "id": "Series",
+      "labels": ["Series"],
+      "properties": {},
+      "position": {
+        "x": 450,
+        "y": 150
+      },
+      "caption": "Series"
+    },
+    {
+      "id": "Genre",
+      "labels": ["Genre"],
+      "properties": {},
+      "position": {
+        "x": 300,
+        "y": 300
+      },
+      "caption": "Genre"
+    },
+    {
+      "id": "Actor",
+      "labels": ["Actor"],
+      "properties": {},
+      "position": {
+        "x": 150,
+        "y": 300
+      },
+      "caption": "Actor"
+    },
+    {
+      "id": "Director",
+      "labels": ["Director"],
+      "properties": {},
+      "position": {
+        "x": 450,
+        "y": 300
+      },
+      "caption": "Director"
+    }
+  ],
+  "relationships": [
+    {
+      "id": "User-Movie",
+      "type": "WATCHED",
+      "startNode": "User",
+      "endNode": "Movie",
+      "properties": {
+        "rating": ""
+      },
+      "caption": "WATCHED"
+    },
+    {
+      "id": "User-Series",
+      "type": "WATCHED",
+      "startNode": "User",
+      "endNode": "Series",
+      "properties": {
+        "rating": ""
+      },
+      "caption": "WATCHED"
+    },
+    {
+      "id": "Actor-Movie",
+      "type": "ACTED_IN",
+      "startNode": "Actor",
+      "endNode": "Movie",
+      "properties": {},
+      "caption": "ACTED_IN"
+    },
+    {
+      "id": "Actor-Series",
+      "type": "ACTED_IN",
+      "startNode": "Actor",
+      "endNode": "Series",
+      "properties": {},
+      "caption": "ACTED_IN"
+    },
+    {
+      "id": "Director-Movie",
+      "type": "DIRECTED",
+      "startNode": "Director",
+      "endNode": "Movie",
+      "properties": {},
+      "caption": "DIRECTED"
+    },
+    {
+      "id": "Director-Series",
+      "type": "DIRECTED",
+      "startNode": "Director",
+      "endNode": "Series",
+      "properties": {},
+      "caption": "DIRECTED"
+    },
+    {
+      "id": "Movie-Genre",
+      "type": "IN_GENRE",
+      "startNode": "Movie",
+      "endNode": "Genre",
+      "properties": {},
+      "caption": "IN_GENRE"
+    },
+    {
+      "id": "Series-Genre",
+      "type": "IN_GENRE",
+      "startNode": "Series",
+      "endNode": "Genre",
+      "properties": {},
+      "caption": "IN_GENRE"
+    }
+  ],
+  "style": {
+    "User": {
+      "color": "#FF6B6B",
+      "size": 40
+    },
+    "Movie": {
+      "color": "#4ECDC4",
+      "size": 40
+    },
+    "Series": {
+      "color": "#45B7D1",
+      "size": 40
+    },
+    "Genre": {
+      "color": "#96CEB4",
+      "size": 35
+    },
+    "Actor": {
+      "color": "#FFEAA7",
+      "size": 40
+    },
+    "Director": {
+      "color": "#DDA0DD",
+      "size": 40
+    }
+  }
+}
