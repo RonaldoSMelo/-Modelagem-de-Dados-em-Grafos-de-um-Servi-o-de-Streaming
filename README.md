@@ -1,6 +1,12 @@
 # Modelagem de Dados em Grafos - Serviço de Streaming
 
-![Modelo de Grafo](imagens/Screenshot_1.png)
+![Modelo de Grafo - Arrows.app](imagens/Screenshot_1.png)
+
+*Diagrama de modelagem criado no Arrows.app*
+
+![Visualização Neo4j Bloom](imagens/bloom-visualisation.png)
+
+*Visualização interativa do grafo no Neo4j Bloom com dados populados*
 
 ## 📋 Descrição do Projeto
 
@@ -71,10 +77,21 @@ User ──[WATCHED]──> Movie ──[IN_GENRE]──> Genre
 
 ### Visualizar o Diagrama
 
+#### Arrows.app (Modelagem)
+
 1. Acesse [arrows.app](https://arrows.app)
 2. Clique em "Import" e carregue o arquivo `modelo-grafo.arrows`
 3. Visualize e edite o diagrama conforme necessário
 4. Você também pode exportar o diagrama atualizado de volta para o arquivo
+
+#### Neo4j Bloom (Visualização Interativa)
+
+Após executar o script, você pode visualizar o grafo no Neo4j Bloom:
+
+1. Abra o Neo4j Bloom ou clique em "Open in Bloom" no Neo4j Desktop
+2. Use a visualização para explorar os relacionamentos entre usuários, conteúdo e pessoas
+3. Filtre por tipo de nó ou relacionamento para análises específicas
+4. Interaja com o grafo para descobrir padrões e conexões
 
 ## 📈 Dados Populados
 
